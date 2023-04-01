@@ -2,98 +2,266 @@
 <html>
 <head>
 <meta charset="UTF-8">
+	<title>Flexbox Assignment</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Untitled Document</title>
-<style>
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Duru+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#menu" ).menu({
+      items: "> :not(.ui-widget-header)"
+    });
+  } );
+  </script>
+  <style>
+  .ui-menu { width: 200px; }
+  .ui-widget-header { padding: 0.2em; }
+	 
+
+
+	
 * {
     box-sizing: border-box;
 }
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+   font-family: 'Duru Sans', sans-serif;
 }
 /* Style the side navigation */
 .sidenav {
     height: 100%;
     width: 200px;
     position: fixed;
-    z-index: 1;
     top: 0;
     left: 0;
-    background-color: #FF7107;
+    background-color:
     overflow-x: hidden;
+    position: fixed;
+	background-color:black;
+		
 }
 /* Side navigation links */
 .sidenav a {
     color: white;
-    padding: 30px;
+    padding: 16px;
     text-decoration: none;
     display: block;
+	 font-family: 'Bangers', cursive;
+	font-size: 40px;
+	margin-top: 50px;
+	text-align: center
+	
 }
 /* Change color on hover */
 .sidenav a:hover {
-    background-color: Black;
-    color: white;
+    background-color:rgba(255,112,7,1.00);
+    color: black;
 }
 /* Style the content */
-.content {
-    margin-left: 200px;
-    padding-left: 20px;
-}
+
 .header {
-    background-color: black;
-    height: 100px;
+    background-color: white;
+    height: 120px;
     text-align: center;
     margin-left: 200px;
-    color: white;
-    font-size: 15px;
-    padding: 20px
+    color: black;
+    font-size: 40px;
+    
+	 font-family: 'Bangers', cursive;
+	
+	
+
 }
-.flex-container {
-    display: flex;
-    flex-wrap: nowrap;
-    background-color: darkgray;
-    justify-content: center;
-    height: 400px;
-    margin-left: 200px
-}
-.flex-container > div {
-    background-color: #f1f1f1;
-    width: 400px;
-    margin: 20px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
-}
-.flex-container:hover > div {
-    background-color: Black;
-    color: white;
-}
+	.categoryoneA{
+		display: flex;
+		flex-wrap: nowrap;
+margin-left: 200px;
+		background-color:#FF7107;
+		height:300px;
+		padding:10px;
+		overflow-x: auto;
+		
+	}
+	.categoryoneA div {
+		background-color:grey;
+		margin: 15px;
+		padding: 30px;
+		font-size: 30px;
+		border-radius: 10px;
+		color: white;
+		text-align: center;
+		
+		
+	}
+	
+		
+	
+	.categorytwoB{
+		display: flex;
+		flex-wrap: nowrap;
+margin-left: 200px;
+		background-color:#FF7107;
+		height:300px;
+		padding:10px;
+	
+		
+	}
+	.categorytwoB div
+		{
+			background-color: grey;
+		margin: 15px;
+		padding: 30px;
+		font-size: 30px;
+		border-radius: 10px;
+			color: white;
+			text-align: center;
+		}
+	.category-3C {
+		display: flex;
+		flex-wrap: nowrap;
+margin-left: 200px;
+		background-color:#FF7107;
+		height:300px;
+		padding:10px;
+		
+	}
+	.category-3C div {
+		background-color: grey;
+		margin: 15px;
+		padding: 30px;
+		font-size: 30px;
+		border-radius: 10px;
+		color: white;
+		text-align: center;
+		
+	}
+	.footer{
+		background-color: grey;
+		height: 80px;
+	}
+	.a1:hover{
+		background-color: white;
+		color: black;
+	}
+
+	.a2:hover{
+		background-color: white;
+		color: black;
+	}
+	.a3:hover{
+		background-color: white;
+		color: black;
+	}
+	.a4:hover{
+		background-color: white;
+		color: black;
+	}
+	.b1:hover{
+		background-color: white;
+		color: black;
+	}
+	.b2:hover{
+		background-color: white;
+		color: black;
+	}
+	.b3:hover{
+		background-color: white;
+		color: black;
+	}
+	.b4:hover{
+		background-color: white;
+		color: black;
+		
+	}
+	.c1:hover{
+		background-color: white;
+		color: black;
+	}
+	.c2:hover{
+		background-color: white;
+		color: black;
+	}
+	.c3:hover{
+		background-color: white;
+		color: black;
+	}
+	.c4:hover{
+		background-color: white;
+		color: black;
+	}
+	.categorytwoB{
+		margin-top: 20px;
+	}
+		.category-3C{
+		margin-top: 20px;
+				margin-bottom: 20px;
+	}
+	  #menu{
+		  background-color:rgba(255,112,6,1.00);
+		border: 20px solid ;
+margin: auto;
+		
+		  margin-left: 810px;
+		  margin-top: 60px;
+		  list-style-type: none;
+		  border-color: rgba(255,112,7,1.00);
+		  
+		  
+	  }
+	  .ui-widget-header{
+		  background-color: black;
+		  color: white;
+		  
+	  }
+	
 </style>
 </head>
 
 <body>
-<div class="sidenav"> <a href="home.html">Home</a> <a href="">About</a> <a href="#">Contact</a> <a href="#">D Zines</a> </div>
+<ul id="menu">
+  <li class="ui-widget-header"><div>Category 1</div></li>
+  <li><div>Option 1</div></li>
+  <li><div>Option 2</div></li>
+  <li><div>Option 3</div></li>
+  <li class="ui-widget-header"><div>Category 2</div></li>
+  <li><div>Option 4</div></li>
+  <li><div>Option 5</div></li>
+  <li><div>Option 6</div></li>
+</ul>
+  
+ 
+<div class="sidenav"> <a href="home.html">Home</a> <a href="#">About</a> <a href="contact.html">Contact</a> <a href="index.html">D Zines</a> </div>
 <div class="header">
-  <h1>Digital Zines</h1>
+  <h1>D Zines</h1>
 </div>
-<div class="flex-container">
-  <div class="a">1</div>
-  <div>2</div>
-  <div>3</div>
-  <div>4</div>
+
+<div class="categoryoneA">
+	
+  <div class="a1" >No Prevew Available</div>
+  <div  class="a2">No Prevew Available</div>
+  <div  class="a3">No Prevew Available</div>
+  <div  class="a4">No Prevew Available</div>
 </div>
-<div class="flex-container">
-  <div class="a">5</div>
-  <div>6</div>
-  <div>7</div>
-  <div>8</div>
+	
+<div class="categorytwoB">
+	
+  <div class="b1">No Prevew Available</div>
+  <div class="b2">No Prevew Available</div>
+  <div class="b3">No Prevew Available</div>
+  <div class="b4">No Prevew Available</div>
 </div>
-<div class="flex-container">
-  <div class="a">9</div>
-  <div>10</div>
-  <div>11</div>
-  <div>12</div>
-</div>
+<div  class="category-3C">
+	
+  <div class="c1">No Prevew Available</div>
+  <div class="c2">No Prevew Available</div>
+  <div class="c3">No Prevew Available</div>
+  <div class="c2">No Prevew Available</div>
+	</div>
+	
+
+	<div class="footer"></div>
 </body>
 </html>

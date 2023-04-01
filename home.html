@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Untitled Document</title>
+<title>Flexbox Assignment</title>
 <link href="https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Duru+Sans&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,10 +13,10 @@
 }
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  
     background-color: black;
     color: white;
-    background: url("images/hero.jpg") repeat center
+    background:rgba(255,112,6,1.00);
 }
 /* Style the side navigation */
 .sidenav {
@@ -26,9 +26,11 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #FF7107;
+    background-color:
     overflow-x: hidden;
     position: fixed;
+	background-color:black;
+		
 }
 /* Side navigation links */
 .sidenav a {
@@ -36,11 +38,16 @@ body {
     padding: 16px;
     text-decoration: none;
     display: block;
+	 font-family: 'Bangers', cursive;
+	font-size: 40px;
+	margin-top: 50px;
+	text-align: center
+	
 }
 /* Change color on hover */
 .sidenav a:hover {
-    background-color: Black;
-    color: white;
+    background-color:rgba(255,112,7,1.00);
+    color: black;
 }
 /* Style the content */
 .content {
@@ -54,34 +61,47 @@ body {
 .welcome h1 {
     font-size: 68px;
     font-family: 'Duru Sans', sans-serif;
+
 }
 .welcome p {
     font-size: 30px;
     padding-top: 30px;
     font-family: 'Duru Sans', sans-serif;
 }
+	
 .welcome button {
     margin-top: 50px;
-    height: 50px;
-    width: 150px;
-    border-radius: 50px;
-    background-color: rgba(255,112,6,1.00);
+    height: 70px;
+    width: 160px;
+    border-radius: 10px;
+    background-color: black;
     font-size: 38px;
     font-family: 'Bangers', cursive;
     text-align: center;
-    color: ghostwhite
+    color: ghostwhite;
+	margin-left: 180px;
+
+	
 }
+	button:hover {
+		background-color:rgba(255,112,7,1.00);
+		color:black;
+	}
+	.innercont{
+		text-align:left;
+		padding-top: 70px;
+		margin-left: 100px
 </style>
 </head>
 
 <body>
-<div class="sidenav"> <a href="#">Home</a> <a href="#">About</a> <a href="#">Contact</a> <a href="index.html">D Zines</a> </div>
+<div class="sidenav"> <a href="home.html">Home</a> <a href="#">About</a> <a href="contact.html">Contact</a> <a href="index.html">D Zines</a> </div>
 <section class="welcome">
   <div class="innercont">
     <h1 style="font-size: 5vw">Digital Zines</h1>
     <p style="font-size: 2vw">Empowering Creative Expression</p>
-    <button style="font-size: 2vw" type="button" onclick="index.html">D Zines</button>
-  </div>
+   <button onclick="location.href='index.html';">D Zines</button>
+	</div>
 </section>
 </body>
 </html>
