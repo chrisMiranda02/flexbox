@@ -2,33 +2,33 @@
 <html>
 <head>
 <meta charset="UTF-8">
-	<title>Flexbox Assignment</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Duru+Sans&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-  <script>
+<title>Flexbox Assignment</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Duru+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script>
   $( function() {
     $( "#menu" ).menu({
       items: "> :not(.ui-widget-header)"
     });
   } );
   </script>
-  <style>
-  .ui-menu { width: 200px; }
-  .ui-widget-header { padding: 0.2em; }
-	 
-
-
-	
+<style>
+.ui-menu {
+    width: 200px;
+}
+.ui-widget-header {
+    padding: 0.2em;
+}
 * {
     box-sizing: border-box;
 }
 body {
     margin: 0;
-   font-family: 'Duru Sans', sans-serif;
+    font-family: 'Duru Sans', sans-serif;
 }
 /* Style the side navigation */
 .sidenav {
@@ -37,11 +37,10 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color:
-    overflow-x: hidden;
+background-color:
+overflow-x: hidden;
     position: fixed;
-	background-color:black;
-		
+    background-color: black;
 }
 /* Side navigation links */
 .sidenav a {
@@ -49,15 +48,14 @@ body {
     padding: 16px;
     text-decoration: none;
     display: block;
-	 font-family: 'Bangers', cursive;
-	font-size: 40px;
-	margin-top: 50px;
-	text-align: center
-	
+    font-family: 'Bangers', cursive;
+    font-size: 40px;
+    margin-top: 50px;
+    text-align: center
 }
 /* Change color on hover */
 .sidenav a:hover {
-    background-color:rgba(255,112,7,1.00);
+    background-color: rgba(255,112,7,1.00);
     color: black;
 }
 /* Style the content */
@@ -69,199 +67,184 @@ body {
     margin-left: 200px;
     color: black;
     font-size: 40px;
-    
-	 font-family: 'Bangers', cursive;
-	
-	
-
+    font-family: 'Bangers', cursive;
 }
-	.categoryoneA{
-		display: flex;
-		flex-wrap: nowrap;
-margin-left: 200px;
-		background-color:#FF7107;
-		height:300px;
-		padding:10px;
-		overflow-x: auto;
-		
-	}
-	.categoryoneA div {
-		background-color:grey;
-		margin: 15px;
-		padding: 30px;
-		font-size: 30px;
-		border-radius: 10px;
-		color: white;
-		text-align: center;
-		
-		
-	}
-	
-		
-	
-	.categorytwoB{
-		display: flex;
-		flex-wrap: nowrap;
-margin-left: 200px;
-		background-color:#FF7107;
-		height:300px;
-		padding:10px;
-	
-		
-	}
-	.categorytwoB div
-		{
-			background-color: grey;
-		margin: 15px;
-		padding: 30px;
-		font-size: 30px;
-		border-radius: 10px;
-			color: white;
-			text-align: center;
-		}
-	.category-3C {
-		display: flex;
-		flex-wrap: nowrap;
-margin-left: 200px;
-		background-color:#FF7107;
-		height:300px;
-		padding:10px;
-		
-	}
-	.category-3C div {
-		background-color: grey;
-		margin: 15px;
-		padding: 30px;
-		font-size: 30px;
-		border-radius: 10px;
-		color: white;
-		text-align: center;
-		
-	}
-	.footer{
-		background-color: grey;
-		height: 80px;
-	}
-	.a1:hover{
-		background-color: white;
-		color: black;
-	}
-
-	.a2:hover{
-		background-color: white;
-		color: black;
-	}
-	.a3:hover{
-		background-color: white;
-		color: black;
-	}
-	.a4:hover{
-		background-color: white;
-		color: black;
-	}
-	.b1:hover{
-		background-color: white;
-		color: black;
-	}
-	.b2:hover{
-		background-color: white;
-		color: black;
-	}
-	.b3:hover{
-		background-color: white;
-		color: black;
-	}
-	.b4:hover{
-		background-color: white;
-		color: black;
-		
-	}
-	.c1:hover{
-		background-color: white;
-		color: black;
-	}
-	.c2:hover{
-		background-color: white;
-		color: black;
-	}
-	.c3:hover{
-		background-color: white;
-		color: black;
-	}
-	.c4:hover{
-		background-color: white;
-		color: black;
-	}
-	.categorytwoB{
-		margin-top: 20px;
-	}
-		.category-3C{
-		margin-top: 20px;
-				margin-bottom: 20px;
-	}
-	  #menu{
-		  background-color:rgba(255,112,6,1.00);
-		border: 20px solid ;
-margin: auto;
-		
-		  margin-left: 810px;
-		  margin-top: 60px;
-		  list-style-type: none;
-		  border-color: rgba(255,112,7,1.00);
-		  
-		  
-	  }
-	  .ui-widget-header{
-		  background-color: black;
-		  color: white;
-		  
-	  }
-	
+.categoryoneA {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 200px;
+    background-color: #FF7107;
+    height: 300px;
+    padding: 10px;
+    overflow-x: auto;
+}
+.categoryoneA div {
+    background-color: grey;
+    margin: 15px;
+    padding: 30px;
+    font-size: 30px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+.categorytwoB {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 200px;
+    background-color: #FF7107;
+    height: 300px;
+    padding: 10px;
+}
+.categorytwoB div {
+    background-color: grey;
+    margin: 15px;
+    padding: 30px;
+    font-size: 30px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+.category-3C {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 200px;
+    background-color: #FF7107;
+    height: 300px;
+    padding: 10px;
+}
+.category-3C div {
+    background-color: grey;
+    margin: 15px;
+    padding: 30px;
+    font-size: 30px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+.footer {
+    background-color: grey;
+    height: 80px;
+}
+.a1:hover {
+    background-color: white;
+    color: black;
+}
+.a2:hover {
+    background-color: white;
+    color: black;
+}
+.a3:hover {
+    background-color: white;
+    color: black;
+}
+.a4:hover {
+    background-color: white;
+    color: black;
+}
+.b1:hover {
+    background-color: white;
+    color: black;
+}
+.b2:hover {
+    background-color: white;
+    color: black;
+}
+.b3:hover {
+    background-color: white;
+    color: black;
+}
+.b4:hover {
+    background-color: white;
+    color: black;
+}
+.c1:hover {
+    background-color: white;
+    color: black;
+}
+.c2:hover {
+    background-color: white;
+    color: black;
+}
+.c3:hover {
+    background-color: white;
+    color: black;
+}
+.c4:hover {
+    background-color: white;
+    color: black;
+}
+.categorytwoB {
+    margin-top: 20px;
+}
+.category-3C {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#menu {
+    background-color: rgba(255,112,6,1.00);
+    border: 20px solid;
+    margin: auto;
+    margin-left: 810px;
+    margin-top: 60px;
+    list-style-type: none;
+    border-color: rgba(255,112,7,1.00);
+}
+.ui-widget-header {
+    background-color: black;
+    color: white;
+}
 </style>
 </head>
 
 <body>
 <ul id="menu">
-  <li class="ui-widget-header"><div>Category 1</div></li>
-  <li><div>Option 1</div></li>
-  <li><div>Option 2</div></li>
-  <li><div>Option 3</div></li>
-  <li class="ui-widget-header"><div>Category 2</div></li>
-  <li><div>Option 4</div></li>
-  <li><div>Option 5</div></li>
-  <li><div>Option 6</div></li>
+  <li class="ui-widget-header">
+    <div>Category 1</div>
+  </li>
+  <li>
+    <div>Option 1</div>
+  </li>
+  <li>
+    <div>Option 2</div>
+  </li>
+  <li>
+    <div>Option 3</div>
+  </li>
+  <li class="ui-widget-header">
+    <div>Category 2</div>
+  </li>
+  <li>
+    <div>Option 4</div>
+  </li>
+  <li>
+    <div>Option 5</div>
+  </li>
+  <li>
+    <div>Option 6</div>
+  </li>
 </ul>
-  
- 
 <div class="sidenav"> <a href="home.html">Home</a> <a href="#">About</a> <a href="contact.html">Contact</a> <a href="index.html">D Zines</a> </div>
 <div class="header">
   <h1>D Zines</h1>
 </div>
-
 <div class="categoryoneA">
-	
   <div class="a1" >No Prevew Available</div>
   <div  class="a2">No Prevew Available</div>
   <div  class="a3">No Prevew Available</div>
   <div  class="a4">No Prevew Available</div>
 </div>
-	
 <div class="categorytwoB">
-	
   <div class="b1">No Prevew Available</div>
   <div class="b2">No Prevew Available</div>
   <div class="b3">No Prevew Available</div>
   <div class="b4">No Prevew Available</div>
 </div>
 <div  class="category-3C">
-	
   <div class="c1">No Prevew Available</div>
   <div class="c2">No Prevew Available</div>
   <div class="c3">No Prevew Available</div>
   <div class="c2">No Prevew Available</div>
-	</div>
-	
-
-	<div class="footer"></div>
+</div>
+<div class="footer"></div>
 </body>
 </html>

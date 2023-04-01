@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/* CSS Document */
+#bgsolid {
+    background-color: #FF7107;
+    height: 600px;
+    width: 1100px;
+    margin: auto;
+    margin-right: 170px;
+	
+}
+#Form {
+    height: 500px;
+    width: 1005px;
+    background-color: #D9D9D9;
+}
+#Form {
+    padding-top: 100px;
+    margin-top: 250px
+}
+label {
+    font-family: 'Bangers', cursive;
+    font-size: 48px;
+    margin-left: 50px
+}
+#fname {
+    width: 795px;
+    height: 41px;
+    margin-left: 50px
+}
+#lname {
+    width: 795px;
+    height: 41px;
+    margin-left: 50px
+}
+#em {
+    width: 795px;
+    height: 41px;
+    margin-left: 50px
+}
+#other {
+    width: 795px;
+    height: 41px;
+    margin-left: 50px
+}
+#button {
+    background-color: black;
+    color: white;
+    margin-left: 715px;
+    border-radius: 50px;
+    height: 41px;
+    width: 131px;
+    margin-top: 35px;
+}
+/* Style the side navigation */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+overflow-x: hidden;
+    position: fixed;
+    background-color: black;
+}
+/* Side navigation links */
+.sidenav a {
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Bangers', cursive;
+    font-size: 40px;
+    margin-top: 50px;
+    text-align: center
+}
+/* Change color on hover */
+.sidenav a:hover {
+    background-color: rgba(255,112,7,1.00);
+    color: black;
+}
