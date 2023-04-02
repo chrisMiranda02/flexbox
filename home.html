@@ -57,11 +57,13 @@ overflow-x: hidden;
 .welcome h1 {
     font-size: 68px;
     font-family: 'Duru Sans', sans-serif;
+	color: black;
 }
 .welcome p {
     font-size: 30px;
-    padding-top: 30px;
+    padding-top: 5px;
     font-family: 'Duru Sans', sans-serif;
+	
 }
 .welcome button {
     margin-top: 50px;
@@ -76,18 +78,23 @@ overflow-x: hidden;
     margin-left: 180px;
 }
 button:hover {
-    background-color: rgba(255,112,7,1.00);
+    background-color:white;
     color: black;
 }
-.innercont {
-    text-align: left;
+.innercont 
+	{
+		 text-align: left;
     padding-top: 70px;
     margin-left: 100px;
+	}
+	#dzhover:hover{
+		background-color: white;
+	}
 </style>
 </head>
 
 <body>
-<div class="sidenav"> <a href="home.html">Home</a> <a href="#">About</a> <a href="contact.html">Contact</a> <a href="index.html">D Zines</a> </div>
+<div class="sidenav"> <a href="home.html">Home</a> <a href="index.html" id="dzhover">D Zines</a> <a href="contact.html">Colaborte</a><a href="#">About</a> <a href="contact.html">Shop</a> </div>
 <section class="welcome">
   <div class="innercont">
     <h1 style="font-size: 5vw">Digital Zines</h1>

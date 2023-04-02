@@ -19,13 +19,19 @@
 <style>
 .ui-menu {
     width: 200px;
+    background-image: image("image/room.jpg");
+    position: relative;
+    padding: 05%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .ui-widget-header {
-    padding: 0.2em;
 }
 * {
-    box-sizing: border-box;
+	
 }
+	
 body {
     margin: 0;
     font-family: 'Duru Sans', sans-serif;
@@ -73,14 +79,14 @@ overflow-x: hidden;
     display: flex;
     flex-wrap: nowrap;
     margin-left: 200px;
-    background-color: #FF7107;
+background-color:;
     height: 300px;
     padding: 10px;
     overflow-x: auto;
 }
 .categoryoneA div {
     background-color: grey;
-    margin: 15px;
+    margin: 5px;
     padding: 30px;
     font-size: 30px;
     border-radius: 10px;
@@ -91,13 +97,13 @@ overflow-x: hidden;
     display: flex;
     flex-wrap: nowrap;
     margin-left: 200px;
-    background-color: #FF7107;
+background-color:;
     height: 300px;
     padding: 10px;
 }
 .categorytwoB div {
     background-color: grey;
-    margin: 15px;
+    margin: 5px;
     padding: 30px;
     font-size: 30px;
     border-radius: 10px;
@@ -108,13 +114,13 @@ overflow-x: hidden;
     display: flex;
     flex-wrap: nowrap;
     margin-left: 200px;
-    background-color: #FF7107;
+background-color:;
     height: 300px;
     padding: 10px;
 }
 .category-3C div {
     background-color: grey;
-    margin: 15px;
+    margin: 5px;
     padding: 30px;
     font-size: 30px;
     border-radius: 10px;
@@ -193,44 +199,26 @@ overflow-x: hidden;
     background-color: black;
     color: white;
 }
-	.footer{
-		text-align: center;
-		padding: 30px;
-		
-	}
+.footer {
+    text-align: left;
+    padding: 0px;
+}
+#dzhover:hover {
+    background-color: white;
+}
+#heroan {
+    display: flex;
+    justify-content: center;
+}
+	
 </style>
 </head>
 
 <body>
-<ul id="menu">
-  <li class="ui-widget-header">
-    <div>Category 1</div>
-  </li>
-  <li>
-    <div>Option 1</div>
-  </li>
-  <li>
-    <div>Option 2</div>
-  </li>
-  <li>
-    <div>Option 3</div>
-  </li>
-  <li class="ui-widget-header">
-    <div>Category 2</div>
-  </li>
-  <li>
-    <div>Option 4</div>
-  </li>
-  <li>
-    <div>Option 5</div>
-  </li>
-  <li>
-    <div>Option 6</div>
-  </li>
-</ul>
-<div class="sidenav"> <a href="home.html">Home</a> <a href="#">About</a> <a href="contact.html">Contact</a> <a href="index.html">D Zines</a> </div>
+<div class="sidenav"> <a href="home.html">Home</a> <a href="index.html" id="dzhover">D Zines</a> <a href="contact.html">Colaborte</a><a href="#">About</a> <a href="contact.html">Shop</a> </div>
 <div class="header">
-  <h1>D Zines</h1>
+  <h1 id="heroan">D Zines</h1>
+  <div></div>
 </div>
 <div class="categoryoneA">
   <div class="a1" >No Prevew Available</div>
