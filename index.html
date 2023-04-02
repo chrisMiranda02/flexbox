@@ -28,10 +28,6 @@
 }
 .ui-widget-header {
 }
-* {
-	
-}
-	
 body {
     margin: 0;
     font-family: 'Duru Sans', sans-serif;
@@ -210,6 +206,52 @@ background-color:;
     display: flex;
     justify-content: center;
 }
+	@media only screen and (max-width: 768px) {
+  .sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+	  flex-wrap: nowrap;
+  }
+  
+  .sidenav a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-family: 'Bangers', cursive;
+    font-size: 25px;
+    margin-top: 0;
+    color: white;
+  }
+
+  .sidenav a:hover {
+    background-color: rgba(255,112,7,1.00);
+    color: black;
+  }
+
+  .header {
+    margin-left: 0;
+  }
+
+  .categoryoneA,
+  .categorytwoB,
+  .category-3C {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .categoryoneA div,
+  .categorytwoB div,
+  .category-3C div {
+    font-size: 20px;
+    padding: 20px;
+  }
+}
+
 	
 </style>
 </head>
