@@ -88,57 +88,10 @@ button:hover {
 	#dzhover:hover{
 		background-color: white;
 	}
-	@media only screen and (max-width: 768px) {
-  .sidenav {
-    width: 100%;
-    height: auto;
-    position: relative;
-	
-  }
-  
-  .sidenav a {
-    display: block;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-    font-family: 'Bangers', cursive;
-    font-size: 25px;
-    margin-top: 0;
-    color: white;
-  }
-
-  .sidenav a:hover {
-    background-color: rgba(255,112,7,1.00);
-    color: black;
-  }
-		
-  @media screen and (max-width: 768px) {
-    h1 {
-      font-size: 10vw;
-    }
-
-    p {
-      font-size: 4vw;
-    }
-
-    button {
-      font-size: 10px;
-    }
-  }
-
-  @media screen and (max-width: 480px) {
-    h1 {
-      font-size: 15vw;
-    }
-
-    p {
-      font-size: 6vw;
-    }
-
-    button {
-      font-size: 12px;
-    }
-  }
+	.dark-mode {
+  background-color: black;
+  color: white;
+}
 </style>
 </head>
 
@@ -151,5 +104,13 @@ button:hover {
     <button onclick="location.href='index.html';">D Zines</button>
   </div>
 </section>
+	<button onclick="myFunction()">Toggle dark mode</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
 </body>
 </html>

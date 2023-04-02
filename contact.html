@@ -10,11 +10,14 @@
 <link href="main.css" rel="stylesheet" type="text/css">
 <style>
 #bgsolid {
+	display: flex;
+	flex-direction: column;
     background-color: #FF7107;
     height: 2288px;
-    width: 1100px;
+    width: 100%;
     margin: auto;
-    margin-right:170px;
+   
+	
 	
 	
 }
@@ -24,8 +27,10 @@
     background-color: #D9D9D9;
 }
 #Form {
-    padding-top: 100px;
+    padding-top: 80px;
     margin-top: 250px;
+	margin-left: 190px;
+	
 }
 label {
     font-family: 'Bangers', cursive;
@@ -65,7 +70,6 @@ label {
 .sidenav {
     height: 100%;
     width: 200px;
-    position: fixed;
     top: 0;
     left: 0;
 overflow-x: hidden;
@@ -105,14 +109,77 @@ overflow-x: hidden;
 	#dzhover:hover{
 		background-color: white;
 	}	
+@media screen and (max-width: 768px) {
+.container {
+flex-direction: column;
+}
 
+#bgsolid {
+height: auto;
+margin-right: 0;
+}
+
+.sidenav {
+width: 100%;
+height: auto;
+position: static;
+text-align: center;
+}
+
+#instructions p {
+font-size: 40px;
+}
+
+#Form div {
+height: auto;
+}
+}
+
+@media screen and (max-width: 480px) {
+label {
+font-size: 24px;
+}
+
+#fname,
+#lname,
+#em,
+#other {
+width: 90%;
+margin-left: 5%;
+}
+
+#button {
+margin-left: 5%;
+}
+
+#instructions p {
+font-size: 32px;
+}
+
+.h1 {
+font-size: 32px;
+}
+	
+}
+	#instructions
+	
+	{
+		margin-left: 200px
+	}
+	/* apply responsive styles to inputs and labels on smaller screens */
+@media screen and (max-width: 768px) {
+  label, input[type="text"], textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
 </style>
 </head>
 
 <body>
 <div id="bgsolid">
 <div class="sidenav"> <a href="home.html">Home</a> <a href="index.html" id="dzhover">D Zines</a> <a href="contact.html">Colaborte</a><a href="#">About</a> <a href="contact.html">Shop</a> </div>	
-	<section id="instructions">
+	<div id="instructions">
 	<p>
 		<h1 class="h1">How to Submit Your Digital Zine to Pages Form:</h1>
 
@@ -143,7 +210,7 @@ Share the link with your followers and on your social media channels to promote 
 Interact with other zine creators and readers on the site to expand your network and reach.
 Submitting your digital zine to Pages Form is a great way to get your work seen by a wider audience and connect with other zine creators. By following these simple steps, you can ensure that your submission is successful and that your zine gets the attention it deserves. So what are you waiting for? Submit your digital zine to Pages Form today!
 		</p>
-	</section>
+	</div>
   
   <!-- Forms Div -->
   <div id="Form">
